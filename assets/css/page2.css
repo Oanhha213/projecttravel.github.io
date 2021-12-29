@@ -53,7 +53,8 @@ body {
   z-index: 9;
   overflow: scroll;
   right: 0;
-  top: 0; }
+  top: 0;
+  display: none; }
   #header-menu .icon-close-hm {
     text-align: right;
     color: #9a9a9a; }
