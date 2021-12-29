@@ -1,0 +1,159 @@
+#nav {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    padding: 0 64px;
+    white-space: nowrap;
+}
+
+.logo-travel {
+    width: 160px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#nav .nav__home a,
+.hover-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    padding: 25px 15px;
+    display: inline-block;
+}
+
+#nav .sub-nav li {
+    padding: 15px 25px;
+    border-bottom: 1px solid #f1f1f1;
+    
+}
+
+#nav .hover-nav:hover > ul {
+    display: block;
+}
+
+.sub-nav li:hover {
+    background-color: #f9f9f9;
+}
+
+.relative > ul,
+.about-us > ul,
+.contact > ul,
+.single-post > ul {
+    background-color: #fff;
+}    
+
+.relative:hover ul,
+.nav__pages .about-us:hover ul,
+.nav__pages .contact:hover ul,
+.nav__news .single-post:hover ul {
+    display: block;
+}
+
+#nav .sub-nav a {
+    color: #9a9a9a;
+    padding: 0;
+}
+
+.nav__packages i,
+.about-us i,
+.contact i {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.nav__packages > li > span {
+    background-color: #f76570;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 5px 2px;
+    letter-spacing: 2px;
+    margin-left: 24px;
+}
+
+.sub-nav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    width: 190px;
+    display: none;
+}
+
+.relative,
+.about-us,
+.contact,
+.single-post {
+    position: relative;
+}
+
+.tour-package,
+.page__about-us,
+.page__contact,
+.news__single-post {
+    top: 0;
+    padding-top: 0;
+    position: absolute;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    margin-left: 190px;
+    display: none;
+}
+
+.tour-package::before,
+.page__about-us::before,
+.page__contact::before,
+.news__single-post::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 190px;
+    width: 25px;
+    left: -25px;
+}
+
+.tour-package li,
+.about-us li,
+.contact li,
+.single-post li {
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+    width: 190px;
+}
+
+.tour-package li span {
+    background-color: #14b9d5;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+    margin-left: 19px;
+    padding-top: 4px;
+    letter-spacing: 2px;
+}
+
+.nav__about-us > li > span {
+    background-color: #1bbc9b;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+    margin-left: 19px;
+    padding-top: 4px;
+    letter-spacing: 2px;
+}
+
+.book-now a {
+    background-color: #ba71da;
+    padding: 10px 15px 8px 15px;
+    border-radius: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 13px;
+}
